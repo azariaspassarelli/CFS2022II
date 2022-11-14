@@ -19,7 +19,7 @@ var Televisor = /** @class */ (function () {
         this.estaPrendido = estaPrendido;
     }
     Televisor.prototype.getCanal = function () {
-        return "esta en el canal" + this.canal;
+        return "esta en el canal " + this.canal;
     };
     Televisor.prototype.setCanal = function (canal) {
         this.canal = canal;
@@ -47,4 +47,6 @@ var TelevisorConDVD = /** @class */ (function (_super) {
 }(Televisor));
 var dvd1 = new DvD(true, "Las Cronicas de Narnia");
 var televisor1 = new TelevisorConDVD(dvd1, 50, true);
-console.log(televisor1.getCanal);
+console.log(televisor1.getCanal());
+televisor1.setCanal(44);
+console.log(televisor1.getCanal());

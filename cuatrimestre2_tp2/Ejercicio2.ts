@@ -8,7 +8,7 @@ class Televisor{
     }
 
     public getCanal():string{
-        return "esta en el canal" + this.canal;
+        return "esta en el canal " + this.canal;
     }
     public setCanal(canal:number){
         this.canal=canal;
@@ -39,4 +39,6 @@ class TelevisorConDVD extends Televisor{
 
 let dvd1: DvD = new DvD(true,"Las Cronicas de Narnia");
 let televisor1: TelevisorConDVD = new TelevisorConDVD(dvd1,50,true);
-console.log(televisor1.getCanal);
+console.log(televisor1.getCanal());
+televisor1.setCanal(44);
+console.log(televisor1.getCanal());
