@@ -1,3 +1,8 @@
+/*Crear una clase -con al menos 2 métodos y 2 atributos-
+Crear un ejemplo de composición
+Crear una relación de herencia
+Crear un objeto*/
+
 class Televisor{
     protected canal: number;
     protected estaPrendido: boolean;
@@ -13,6 +18,16 @@ class Televisor{
     public setCanal(canal:number){
         this.canal=canal;
     }
+    public mostrarCanal (){
+        console.log("Está en el canal " + this.canal);
+    }
+    public mostrarSiEstáPrendidaLaTele(){
+        if(this.estaPrendido = true){
+            console.log("El Televisor está prendido");
+        }else{
+            console.log("El Televisor está apagado");
+        }
+    }
 }
 
 class DvD{
@@ -24,8 +39,15 @@ class DvD{
         this.cdPuesto= cdPuesto;
     }
 
-    public reproducir():string {
-        return "el dvd esta reproduciendo" + this.cdPuesto;
+    public reproducir(){
+        console.log("el dvd esta reproduciendo " + this.cdPuesto);
+    }
+    public mostrarSiEstáPrendidoElDvd(){
+        if(this.estaPrendido = true){
+            console.log("El DVD está prendido");
+        }else{
+            console.log("El DVD está apagado");
+        }
     }
 }
 
@@ -39,6 +61,8 @@ class TelevisorConDVD extends Televisor{
 
 let dvd1: DvD = new DvD(true,"Las Cronicas de Narnia");
 let televisor1: TelevisorConDVD = new TelevisorConDVD(dvd1,50,true);
-console.log(televisor1.getCanal());
+dvd1.mostrarSiEstáPrendidoElDvd();
+televisor1.mostrarSiEstáPrendidaLaTele();
+televisor1.mostrarCanal();
 televisor1.setCanal(44);
-console.log(televisor1.getCanal());
+televisor1.mostrarCanal();

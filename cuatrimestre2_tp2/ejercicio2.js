@@ -1,3 +1,7 @@
+/*Crear una clase -con al menos 2 métodos y 2 atributos-
+Crear un ejemplo de composición
+Crear una relación de herencia
+Crear un objeto*/
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -24,6 +28,17 @@ var Televisor = /** @class */ (function () {
     Televisor.prototype.setCanal = function (canal) {
         this.canal = canal;
     };
+    Televisor.prototype.mostrarCanal = function () {
+        console.log("Está en el canal " + this.canal);
+    };
+    Televisor.prototype.mostrarSiEstáPrendidaLaTele = function () {
+        if (this.estaPrendido = true) {
+            console.log("El Televisor está prendido");
+        }
+        else {
+            console.log("El Televisor está apagado");
+        }
+    };
     return Televisor;
 }());
 var DvD = /** @class */ (function () {
@@ -32,7 +47,15 @@ var DvD = /** @class */ (function () {
         this.cdPuesto = cdPuesto;
     }
     DvD.prototype.reproducir = function () {
-        return "el dvd esta reproduciendo" + this.cdPuesto;
+        console.log("el dvd esta reproduciendo " + this.cdPuesto);
+    };
+    DvD.prototype.mostrarSiEstáPrendidoElDvd = function () {
+        if (this.estaPrendido = true) {
+            console.log("El DVD está prendido");
+        }
+        else {
+            console.log("El DVD está apagado");
+        }
     };
     return DvD;
 }());
@@ -47,6 +70,8 @@ var TelevisorConDVD = /** @class */ (function (_super) {
 }(Televisor));
 var dvd1 = new DvD(true, "Las Cronicas de Narnia");
 var televisor1 = new TelevisorConDVD(dvd1, 50, true);
-console.log(televisor1.getCanal());
+dvd1.mostrarSiEstáPrendidoElDvd();
+televisor1.mostrarSiEstáPrendidaLaTele();
+televisor1.mostrarCanal();
 televisor1.setCanal(44);
-console.log(televisor1.getCanal());
+televisor1.mostrarCanal();

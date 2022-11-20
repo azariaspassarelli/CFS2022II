@@ -13,14 +13,16 @@ clases hijas de esta.
 * ¿Existe la herencia múltiple en Typescript?
 No existe, pero existen las interfaces que tratan de suplir la carencia de ésta.
 * Definir Poliformismo
+El polimorfismo es la capacidad de crear una clase que tiene más de una forma. Clases tienen los mismos métodos pero diferentes implementaciones.
 * ¿Qué es un constructor?¿Para qué sirve?
 Un metodo que se encuentra dentro de la clase el cual permite que se pueda definir los párametros que posee en el
-momento de crear un objeto.
+momento de instanciar una y crear un objeto.
 * ¿Cómo se crea una clase abstracta?
-Con la palabra reservada "abstract" poniendola antes de codear la clase, estas creando una clase abstracta. 
+Con la palabra reservada "abstract" poniendola antes de codear la clase, y usando esta misma palabra para los atributos y/o
+metodos que no esten definidas.
 * ¿Para que se usa el super?
 Se usa para invocar el constructor de la clase padre en la herencia, garantiza que las variables de la superclase
 se inicialicen de la manera esperada.
 * ¿Qué son las interfaces?
-Mecanismo en la programacion orientada a objetos que sirve para extender atributos y metodos no definidos a varias clases
-simulando la herencia multiple.
+Mecanismo en la programacion orientada a objetos que sirve para extender atributos y metodos NO definidos a varias clases.
+Simulando la herencia multiple, ya que una Clase podria implementar mas de una Interfaz.
