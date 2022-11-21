@@ -1,0 +1,25 @@
+Ejercicio 2: Responder las siguientes preguntas
+
+1 - Que es un objeto?
+Instancia de una clase, es decir, algo creado a partir de una clase que posee metodos y caracteristicas.
+2 - Que es una clase?
+Estructura a traves de ña cual creamos objetos con ciertos atributos especificos.
+3 - A que se llama metodo constructor?
+Metodo dentro de la clase que permite crear un objeto a partir de los parametros que posee.
+4 - Que son los modificadores de acceso?
+Capacidad que permite a una clase que sus metodos y atributos puedan ser accedidos. Estos pueden ser:
+Privados(solo pueden modificarse desde la propia clase), Protegidos(solo pueden modificarse por la propia clase
+o por sus clases hijas que la hereden), Públicas(se pueden modificar desde cualquier clase) y Readonly(fuera
+la propia clase puede ser leida pero no modificada)
+5 - Que diferencia hay entre uno privado y uno protegido?
+El privado se puede acceder/modificar dentro de la propia clase y el Protegido, además de eso las clases hijas
+tambien pueden hacerlo.
+6 - Cuando se usa el this?
+Cuando se quiere hacer referencia a determinado atributo definido en una clase, vinculandolo con el valor pasado
+por el parametro dentro del constructor (instancia), ya que sino, el alcance de la misma no podria ser utilizada
+fuera de la clase.
+7 - Cuando se usa el super?
+Se usa para invocar al constructor de la clase padre, garantiza que las variables de la super clase se inicialicen
+de la manera esperada.
+8 - A que se llama sub-clase, o clase hija?
+Clase que hereda de otra, esto quiere decir que puede hacer uso de los metodos y atributos que posee.
